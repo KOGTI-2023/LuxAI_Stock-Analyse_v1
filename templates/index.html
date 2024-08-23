@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Screener and Backtester</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body class="dark-mode">
+    <header>
+        <h1>Stock Screener and Backtester</h1>
+    </header>
+    <main>
+        <section id="screener">
+            <h2>Stock Screener</h2>
+            <form id="screener-form">
+                <input type="text" id="ticker-input" placeholder="Enter ticker">
+                <button type="submit" id="submit-button">Submit</button>
+                <button type="reset" id="reset-button">Reset</button>
+            </form>
+            <table id="screener-table"></table>
+        </section>
+        <section id="backtester">
+            <h2>Strategy Backtester</h2>
+            <form id="backtester-form">
+                <input type="text" id="date-range-input" placeholder="Enter date range">
+                <button type="submit" id="submit-button">Submit</button>
+                <button type="reset" id="reset-button">Reset</button>
+            </form>
+            <div id="backtester-chart"></div>
+        </section>
+        <section id="forecast">
+            <h2>Stock Forecast</h2>
+            <form id="forecast-form">
+                <input type="text" id="ticker-input" placeholder="Enter ticker">
+                <button type="submit" id="submit-button">Submit</button>
+                <button type="reset" id="reset-button">Reset</button>
+            </form>
+            <div id="forecast-chart"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2022 Stock Screener and Backtester</p>
+    </footer>
+    <script src="/static/js/screener.js"></script>
+    <script src="/static/js/backtester.js"></script>
+    <script src="/static/js/forecast.js"></script>
+</body>
+</html>
