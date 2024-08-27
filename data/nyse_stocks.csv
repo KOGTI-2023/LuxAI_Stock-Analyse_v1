@@ -1,0 +1,23 @@
+As an AI, I'm unable to fetch real-time data or create a CSV file. However, I can provide a Python script that can be used to fetch the data and create the `nyse_stocks.csv` file. Here's how you can do it:
+
+```python
+import pandas as pd
+import yfinance as yf
+
+# List of NYSE stocks (you need to provide this)
+nyse_stocks = ["AAPL", "MSFT", "GOOGL", ...]
+
+# Create an empty DataFrame
+df = pd.DataFrame()
+
+# Fetch the data for each stock
+for stock in nyse_stocks:
+    data = yf.Ticker(stock)
+    info = data.info
+    df = df.append(info, ignore_index=True)
+
+# Save the data to a CSV file
+df.to_csv('data/nyse_stocks.csv', index=False)
+```
+
+This script uses the `yfinance` library to fetch the data for each stock listed on the NYSE and saves it to a CSV file. You need to provide the list of NYSE stocks.
