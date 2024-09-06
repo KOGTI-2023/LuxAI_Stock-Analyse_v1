@@ -1,17 +1,15 @@
-1. Dependencies: All Python files will require the pandas, numpy, and sklearn libraries for data manipulation and machine learning. The web application will be built using Flask, so this will be a shared dependency across all Python files. The JavaScript files will require jQuery and D3.js for DOM manipulation and data visualization.
+The shared dependencies between the "docker-compose.yml" and "README.md" files in the "LuxAi_AI-Stock-Predict_App" repository are:
 
-2. Data Schemas: The data schemas for the NYSE and NASDAQ stocks will be shared across the screener, backtester, and forecast models. These schemas will define the structure of the stock data, including fields like 'ticker', 'company', 'sector', 'industry', 'country', 'market cap', 'P/E', 'price', 'change', 'volume'.
+1. Service Names: The names of the services defined in the docker-compose.yml file will be referenced in the README.md file to explain how to use Docker Compose to start the services.
 
-3. DOM Element IDs: The JavaScript files will interact with the HTML templates through various DOM elements. Shared IDs might include 'screener-table', 'backtester-chart', 'forecast-chart', 'submit-button', 'reset-button', 'ticker-input', 'date-range-input'.
+2. Environment Variables: Any environment variables defined in the docker-compose.yml file will also be mentioned in the README.md file, as the user will need to know what variables can be set and what they are used for.
 
-4. Message Names: Messages sent between the client and server might include 'screener-request', 'backtester-request', 'forecast-request', 'screener-response', 'backtester-response', 'forecast-response'.
+3. Ports: The ports that are exposed by the services in the docker-compose.yml file will be documented in the README.md file, so the user knows which ports to use to access the services.
 
-5. Function Names: Shared function names across the JavaScript files might include 'submitForm', 'resetForm', 'updateTable', 'updateChart'. The Python files might share functions like 'loadData', 'preprocessData', 'trainModel', 'predict'. 
+4. Volumes: If any volumes are defined in the docker-compose.yml file, these will also be mentioned in the README.md file, as the user will need to know where data is stored.
 
-6. Exported Variables: The Python files might export trained models for use in other parts of the application. These could be named 'screener_model', 'backtester_model', 'forecast_model'. The JavaScript files might export functions for use in other scripts. 
+5. Dependencies: The README.md file will need to mention any dependencies that are defined as separate services in the docker-compose.yml file, so the user knows what other services are required for the main application to run.
 
-7. Dockerfile: This file will contain instructions for building the Docker image of the application. It will share dependencies with the Python and JavaScript files, as it needs to install the necessary libraries and frameworks for the application to run. 
+6. Docker Compose Commands: The README.md file will include instructions on how to use Docker Compose to start the services defined in the docker-compose.yml file. This will include the command to check if the docker-compose.yml file is syntactically correct.
 
-8. CSS: The 'style.css' file will contain the styling for the HTML templates. It will share class and id names with the HTML and JavaScript files. 
-
-9. HTML Templates: These files will contain the structure of the web pages. They will share id and class names with the CSS and JavaScript files.
+7. Repository Name: Both files are part of the "LuxAi_AI-Stock-Predict_App" repository and will reference this name.
