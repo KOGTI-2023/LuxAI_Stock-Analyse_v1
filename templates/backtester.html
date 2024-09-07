@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Backtester</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="../static/js/backtester.js"></script>
+</head>
+<body class="dark-mode">
+    <div class="container">
+        <h1>Strategy Backtester</h1>
+        <form id="backtester-form">
+            <label for="ticker-input">Ticker:</label>
+            <input type="text" id="ticker-input" name="ticker" required>
+            <label for="date-range-input">Date Range:</label>
+            <input type="text" id="date-range-input" name="date-range" required>
+            <button type="submit" id="submit-button">Submit</button>
+            <button type="reset" id="reset-button">Reset</button>
+        </form>
+        <div id="backtester-chart"></div>
+    </div>
+</body>
+</html>
