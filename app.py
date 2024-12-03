@@ -1,4 +1,3 @@
-```python
 from flask import Flask, render_template, request, jsonify
 import pandas as pd
 from models.stock_screener_model import screener_model
@@ -37,4 +36,3 @@ def forecast():
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
-```
